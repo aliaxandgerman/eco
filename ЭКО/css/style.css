@@ -274,4 +274,7 @@ header .phone [class*="icon"] {
 }
 .footers {
     width: 25%;
+    float: left;
+    background-color: #64ba4a;
+    padding: 15px;
 }
