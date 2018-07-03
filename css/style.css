@@ -31,10 +31,37 @@ header .login {
     line-height: 18px;
     color: #0069b4;
 }
+.menu li {
+    display: inline-block;
+}
+.menu li + li {
+    margin-left: 20px;
+}
 header .menu a {
     font-size: 13px;
     line-height: 28px;
     color: #333333;
+}
+.filter li {
+    display: inline-block;
+}
+.filter li + li {
+    margin-left: 15px;
+}
+.headWrap {
+    display: table;
+    width: 100%;
+}
+.headWrap > div {
+    display: table-cell;
+    width: 33.3333%;
+    vertical-align:top;
+}
+.headWrap .right {
+    text-align: right;
+}
+.headWrap .logo {
+    text-align: center;
 }
 header .phone {
     font-size: 20px;
@@ -75,6 +102,11 @@ header .login [class*="icon"] {
 }
 header .phone [class*="icon"] {
     font-size: 20px;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+
 }
 .sale {
     width: 305px;
@@ -119,6 +151,9 @@ header .phone [class*="icon"] {
     color: #999999;
 }
 .subscribe button {
+    display: table-cell;
+    vertical-align: middle;
+    width: 188px;
     font-size: 13px;
     line-height: 37px;
     text-align: center;
@@ -126,7 +161,13 @@ header .phone [class*="icon"] {
     background-color: #259c47;
     border: none;
 }
+.subscribe .wrap {
+    display: table;
+    width: 100%;
+}
 .subscribe .wrap span {
+    display: table-cell;
+    vertical-align: middle;
     font-size: 12px;
     color: rgba(255,255,255,0.5)
 }
@@ -147,6 +188,28 @@ header .phone [class*="icon"] {
     font-size: 15px;
     line-height: 22px;
     color: #333333;
+}
+.card {
+    position: relative;
+}
+.status {
+    position: absolute;
+    display: block;
+    top: -3px;
+    left: -3px;
+    width: 43px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+}
+.status.hit {
+    background-color: #6eddcc;
+}
+.status.discount {
+    background-color: #ffed03;
+}
+.status.new {
+    background-color: #78ec71;
 }
 .card a {
     font-size: 15px;
@@ -178,6 +241,11 @@ header .phone [class*="icon"] {
      text-align: center;
      color: #666666;
  }
+ .soc  {
+     display: flex;
+     justify-content: space-between;
+ }
+
  .tabs li a {
      font-size: 14px;
      text-decoration: none;
@@ -277,18 +345,4 @@ footer {
     float: left;
     background-color: #64ba4a;
     padding: 15px;
-}
-header {
-    height: 160;
-}
-.r {
-    width: 33.3333%;
-    float: right;
-}
-
-.menu li {
-    display: inline-block;
-}
-.menu li + li {
-    margin-left: 20px;
 }
